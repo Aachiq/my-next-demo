@@ -10,6 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      # here the VM fetch code from github repo
       - name: Checkout code
         uses: actions/checkout@v4
 
@@ -24,7 +25,11 @@ jobs:
       - name: Run build
         run: npm run build
 
+      # he can be replace with deploy on FTP by open ssh connection & any server with credentials
       - name: Deploy to Vercel
         run: |
           npm install -g vercel
-          vercel --prod --confirm --token ${{ secrets.VERCEL_TOKEN }} --org ${{ secrets.VERCEL_ORG_ID }} --project ${{ secrets.VERCEL_PROJECT_ID }}
+          vercel --prod --confirm 
+          --token ${{ secrets.VERCEL_TOKEN }} 
+          --scope ${{ secrets.VERCEL_ORG_ID }} 
+          --project ${{ secrets.VERCEL_PROJECT_ID }}
