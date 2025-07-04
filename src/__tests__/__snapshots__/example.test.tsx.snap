@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`renders homepage unchanged 1`] = `
+<div>
+  <div>
+    <div
+      class="MuiBox-root css-aajsq"
+    >
+      <div
+        class="MuiBox-root css-0"
+      >
+        <h2
+          class="MuiTypography-root MuiTypography-h2 css-1fz1gr1-MuiTypography-root"
+        >
+          Home
+        </h2>
+        <p
+          class="MuiTypography-root MuiTypography-body2 css-zsmq4j-MuiTypography-root"
+        >
+          this is description
+        </p>
+        <button
+          class="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedSecondary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButton-colorSecondary MuiButton-root MuiButton-outlined MuiButton-outlinedSecondary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButton-colorSecondary css-1ioaic5-MuiButtonBase-root-MuiButton-root"
+          tabindex="0"
+          type="button"
+        >
+          Visit Channel
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
